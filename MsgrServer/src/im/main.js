@@ -19,7 +19,7 @@ server.on('connection', function (client) {
         console.log('data');
         console.log(buffer.toString());
         for (let c of clients) {
-            if (c.ended) {
+            if (!c.ended) {
                 c.write(buffer)
             } else {
                 clients.splice(clients.indexOf(c), 1);
@@ -45,4 +45,4 @@ server.on('error', function (error) {
     console.error(error.toString())
 })
 server.listen(Constants.IM.port);
-console.log('start');
+console.log('im server start');
