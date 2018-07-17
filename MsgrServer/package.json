@@ -4,7 +4,8 @@
   "description": "IM",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/main"
+    "start": "node ./src/main",
+    "test": "node ./src/test"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "koa-views": "^6.1.3",
     "mongodb": "^3.0.2",
     "mysql": "^2.15.0",
+    "redis": "^2.8.0",
     "request": "^2.83.0"
   }
 }
